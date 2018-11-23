@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <!--Import Google Icon Font-->
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <!--Import materialize.css-->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-rc.2/css/materialize.min.css">
+  <!--Let browser know website is optimized for mobile-->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <style>
+  </style>
+</head>
+
+<body>
+  <div class="navbar-fixed">
+    <nav>
+      <div class="nav-wrapper blue-grey darken-2">
+        <a href="#" data-target="slide-out" class="sidenav-trigger show-on-large">
+          <i class="material-icons">menu</i>
+        </a>
+        <a href="#" class="brand-logo">&nbsp TU_DIAGNOSIS</a>
+        <a href="#generateReport" class="btn-floating btn-large halfway-fab waves-effect ">
+          <i class="material-icons">add</i>
+        </a>
+      </div>
+    </nav>
+  </div>
+  <ul id="slide-out" class="sidenav">
+    <li>
+      <div class="user-view">
+        <div class="background">
+          <img src="https://pix10.agoda.net/hotelImages/179/1790309/1790309_17010715490050188867.jpg?s=500x500">
+        </div>
+        <a href="#user">
+          <img class="circle" src="https://cdn1.iconfinder.com/data/icons/flat-business-icons/128/user-512.png">
+        </a>
+      </div>
+    </li>
+    <li>
+      <a class="waves-effect" href="#history">History</a>
+    </li>
+    <li>
+      <a class="waves-effect" href="#generateReport">Generate Report</a>
+    </li>
+    <li>
+      <a class="waves-effect" href="#search">Search</a>
+    </li>
+  </ul>
+
+  <div class="container row center" id="history" style="padding-top: 500pt; margin-top: -480pt;">
+    
+  </br>
+  <div class="container row center" id="generateReport" style="padding-top: 50pt;">
+    <div class="col s12">
+      <div class="card">
+        <div class="card-content black-text">
+          <span class="card-title left">Report Generator</span>
+          </br>
+          </br>
+          <div class="row">
+            <div class="col s12">
+              <div class="input-field col s10 inline center">
+                <input id="input" type="text" class="validate" name='sex'>
+                <label for="input" >Sex</label>
+              </div>
+              <div class="input-field col s10 inline center">
+                <input id="input" type="text" class="validate" name='age'>
+                <label for="input" >Age</label>
+              </div>
+              <div class="input-field col s10 inline center">
+                <input id="input" type="text" class="validate" name='weight'>
+                <label for="input" >Weight</label>
+              </div>
+              <div class="input-field col s10 inline center">
+                <input id="input" type="text" class="validate" name='height'>
+                <label for="input" >Height</label>
+              </div>
+              <div class="input-field col s10 inline center">
+                <input id="input" type="text" class="validate" name='bloodPressure'>
+                <label for="input" >Blood Pressure</label>
+              </div>
+              <div class="input-field col s10 inline center">
+                <input id="input" type="text" class="validate" name='glucose'>
+                <label for="input" >Glucose</label>
+              </div>
+              <div class="input-field col s10 inline center">
+                <input id="input" type="text" class="validate"  name='insulin'>
+                <label for="input">Insulin</label>
+              </div> 
+              <div class="input-field col s10 inline center">
+                <input id="input" type="text" class="validate" name='skin'>
+                <label for="input" >Skin</label>
+              </div> 
+              <div class="input-field col s10 inline center">
+                <input id="input" type="text" class="validate" name='pregnant'>
+                <label for="input" >Pregnant</label>
+              </div>
+              <label class="col s6">
+                  <input type="checkbox" />
+                  <span>AFM</span>
+                </label>
+                <label class="col s6">
+                  <input type="checkbox" />
+                  <span>SEM</span>
+                </label>
+            </div>
+              <div class="col s12">
+                </br>
+              </div>
+              <button class="col blue darken-2 s3 btn waves-effect waves-light center" type="submit" name="action">
+                Generate Word
+              </button>
+              <div class="col s1"></div>
+              <button class="col red darken-2 s3 btn waves-effect waves-light center" type="submit" name="action">
+                Generate PDF
+              </button>
+              <div class="col s1"></div>
+              <button class="col orange darken-3 s3 btn waves-effect waves-light center" type="submit" name="action">
+                Generate PowerPoint
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  
+
+
+  <!--JavaScript at end of body for optimized loading-->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-rc.2/js/materialize.min.js"></script>
+  <script>
+    document.addEventListener('DOMContentLoaded', function () {
+      var elems = document.querySelectorAll('.sidenav');
+      var instances = M.Sidenav.init(elems, options);
+    });
+
+    // Initialize collapsible (uncomment the lines below if you use the dropdown variation)
+    // var collapsibleElem = document.querySelector('.collapsible');
+    // var collapsibleInstance = M.Collapsible.init(collapsibleElem, options);
+
+    // Or with jQuery
+
+    $(document).ready(function () {
+      $('.sidenav').sidenav();
+    });
+  </script>
+  <script></script>
+</body>
+
+</html>
