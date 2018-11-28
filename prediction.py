@@ -16,7 +16,7 @@ model_wp = joblib.load('pregnant.joblib')
 def calBMI(w,h):
     w = float(w)
     h = float(h)/100
-    return w/(h**h)
+    return w/(h*h)
 
 def question():
     global age,bmi,bp,glucose,skin,insulin,weight,height
